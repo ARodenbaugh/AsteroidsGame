@@ -4,8 +4,7 @@ from os import path
 import os
 import time
 import contextlib
-with contextlib.redirect_stdout(None):
-    import pygame
+import pygame
 
 # Initialize the game
 pygame.init()
@@ -278,3 +277,5 @@ print("GAME OVER!!!!!\nFinal Score: " + str(score) + "\nShooting Percentage: {:.
 print("\n==============================================\n")
 
 pygame.quit()
+
+# Code adapted and modified from modules demonstrated in: http://programarcadegames.com/index.php?chapter=example_code
